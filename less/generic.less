@@ -19,3 +19,23 @@
 @button-border: 0px solid @button-border-color;
 
 @item-border: 3px solid @item-border-color;
+
+td {
+    border: 1px solid black;
+}
+
+// Menu button next to progress
+// ======================================
+
+.page-level-progress-navigation {
+  display:flex;
+  line-height: 80%;
+}
+
+.page-level-progress-navigation:before {
+  content: "\e63c";
+  padding-right: 8px;
+  color: black;
+  font-family: 'vanilla';
+  font-size: 1.5em;
+}

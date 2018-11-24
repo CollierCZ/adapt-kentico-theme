@@ -2,11 +2,11 @@
 // =============
 
 @white: #ffffff;
-@black: #4b4e4f;
-@blue: #078292;
-@light-grey: #78909c;
-@mid-grey: #546e7a;
-@dark-grey: #37474f;
+@black: #2D373B;
+@blue: #0099D9;
+@light-teal: #2CB8C6;
+@mid-teal: #009BAC;
+@dark-teal: #006E79;
 @red: #f26c4f;
 @green: #82ca9c;
 
@@ -15,7 +15,7 @@
 // ===========
 
 // Components
-@primary-color: @blue;
+@primary-color: @mid-teal;
 @primary-color-inverted: @white;
 // Buttons
 @secondary-color: @black;
@@ -24,13 +24,13 @@
 @tertiary-color: @white;
 @tertiary-color-inverted: @black;
 // Drawer
-@quaternary-color: @dark-grey;
+@quaternary-color: @dark-teal;
 @quaternary-color-inverted: @white;
 // Body
 @foreground-color: @black;
 @background-color: @white;
 @foreground-color-inverted: @white;
-@background-color-inverted: @mid-grey;
+@background-color-inverted: @dark-teal;
 // Validation States
 @validation-error: @red;
 @validation-success: @green;
@@ -47,8 +47,8 @@
 // Body
 @font-color: @foreground-color;
 @font-color-inverted: @foreground-color-inverted;
-@title-color: @primary-color;
-@title-color-inverted: @primary-color-inverted;
+@title-color: @black;
+@title-color-inverted: @white;
 
 // Buttons
 @button-color: @secondary-color;
@@ -100,12 +100,12 @@
 @drawer-progress-border-color: darken(@drawer-item-color, 20%);
 
 // Components
-@component-background-color: darken(@background-color, 10%);
+@component-background-color: #E3E9EC;
 
 @item-color: @primary-color;
 @item-color-hover: darken(@item-color, 20%);
 @item-color-disabled: @disabled-color;
-@item-color-visited: desaturate(@item-color, 90%);
+@item-color-visited: @light-teal;
 @item-color-selected: @item-color-hover;
 
 @item-text-color: @primary-color-inverted;
@@ -127,9 +127,9 @@
 // Menu
 @menu-item-color: @primary-color;
 @menu-item-text-color: @primary-color-inverted;
-@menu-item-progress-color: @primary-color;
-@menu-item-progress-fill-color: @primary-color-inverted;
-@menu-item-progress-border-color: @primary-color-inverted;
+@menu-item-progress-color: darken(@menu-item-color, 20%);
+@menu-item-progress-fill-color: @menu-item-text-color;
+@menu-item-progress-border-color: transparent;
 
 // Notify
 @notify-color: @primary-color;
@@ -143,3 +143,9 @@
 
 @notify-button-text-color: @notify-color;
 @notify-button-text-color-hover: @notify-text-color;
+
+// Table headers
+tr:first-of-type td {
+    background-color: @background-color-inverted;
+    color: @foreground-color-inverted;
+}
