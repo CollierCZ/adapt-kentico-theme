@@ -8,28 +8,27 @@ It provides specific values to styles, including colors, padding, margins, and a
 
 ## Installation
 
-As Adapt's *[core theme](https://github.com/adaptlearning/adapt_framework/wiki/Core-Plug-ins-in-the-Adapt-Learning-Framework#theme),* **Vanilla** is included with the [installation of the Adapt framework](https://github.com/adaptlearning/adapt_framework/wiki/Manual-installation-of-the-Adapt-framework#installation) and the [installation of the Adapt authoring tool](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-Adapt-Origin).
 
-* If **Vanilla** has been uninstalled from the Adapt framework, it may be reinstalled.
+* If the **Kentico Theme** has been uninstalled from the Adapt framework, it may be reinstalled.
 With the [Adapt CLI](https://github.com/adaptlearning/adapt-cli) installed, run the following from the command line:  
-`adapt install adapt-contrib-vanilla`
+`adapt install adapt-kentico-theme`
 
     Alternatively, this component can also be installed by adding the following line of code to the *adapt.json* file:  
-    `"adapt-contrib-vanilla": "*"`  
+    `"adapt-kentico-theme": "*"`  
     Then running the command:  
     `adapt install`  
     (This second method will reinstall all plug-ins listed in *adapt.json*.)  
 
-* If **Vanilla** has been uninstalled from the Adapt authoring tool, it may be reinstalled using the [Plug-in Manager](https://github.com/adaptlearning/adapt_authoring/wiki/Plugin-Manager).  
+* If the **Kentico Theme** has been uninstalled from the Adapt authoring tool, it may be reinstalled using the [Plug-in Manager](https://github.com/adaptlearning/adapt_authoring/wiki/Plugin-Manager).  
 
 ## Uninstallation
 
-The Adapt framework does not allow the installation of more than one theme at a time. In order to replace **Vanilla** it must be uninstalled. With the root of your framework installation as your current working directory, run the following command:  
-`adapt uninstall adapt-contrib-vanilla`  
+The Adapt framework does not allow the installation of more than one theme at a time. In order to replace the **Kentico Theme** it must be uninstalled. With the root of your framework installation as your current working directory, run the following command:  
+`adapt uninstall adapt-kentico-theme`  
 
 ## Settings overview
 
-Unlike most Adapt plug-ins, the **Vanilla** theme has no attributes that are required to be configured in the course JSON files. There is, however, an option to alter the background color of blocks as desired. Configure the attributes highlighted below in *blocks.json*. These attributes are properly formatted as JSON in [*example.json*](https://github.com/adaptlearning/adapt-contrib-vanilla/blob/master/example.json).
+Unlike most Adapt plug-ins, the **Kentico Theme**  has no attributes that are required to be configured in the course JSON files. There is, however, an option to alter the background color of blocks as desired. Configure the attributes highlighted below in *blocks.json*. These attributes are properly formatted as JSON in [*example.json*](https://github.com/adaptlearning/adapt-contrib-vanilla/blob/master/example.json).
 
 #### **blocks.json**
 **_theme** (object): The theme attributes group contains attributes that override those set in **Vanilla**. These include **_backgroundColor**, **_minimumHeights**, and **_isDividerBlock**.
@@ -78,5 +77,5 @@ Visit the [**Vanilla** wiki](https://github.com/adaptlearning/adapt-contrib-vani
 No known limitations.  
 
 ----------------------------
-**Version number:**  0.1  
+**Version number:**  0.1.2 
 **Framework versions:**  3+     
