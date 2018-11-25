@@ -77,5 +77,5 @@ Visit the [**Vanilla** wiki](https://github.com/adaptlearning/adapt-contrib-vani
 No known limitations.  
 
 ----------------------------
-**Version number:**  0.1.2 
+**Version number:**  0.1.3 
 **Framework versions:**  3+     
