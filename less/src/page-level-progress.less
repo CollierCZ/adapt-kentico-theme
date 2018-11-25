@@ -1,53 +1,44 @@
 // General
 // =======
-.pagelevelprogress-indicator-bar {
+.page-level-progress-indicator-bar {
     transition: width 0.3s ease-in;
-}
-
-.base .page-level-progress-navigation-completion {
-    border-color: @black;
 }
 
 // Navigation PLP
 // ==============
 
-.pagelevelprogress-navigation.base {
+.page-level-progress-navigation.base {
     padding: @navigation-padding;
-    padding-top: @navigation-height/2.5;
 
     .no-touch &:hover {
 
-        .pagelevelprogress-indicator {
+        .page-level-progress-navigation-completion {
             background-color: @navigation-progress-background-color-hover;
             border-color: @navigation-progress-border-color;
         }
 
-        .pagelevelprogress-indicator-inner {
+        .page-level-progress-indicator-inner {
             border-color: @navigation-progress-background-color-hover;
         }
 
-        .pagelevelprogress-indicator-bar {
+        .page-level-progress-navigation-bar {
             background-color: @navigation-progress-color-hover;
-        }
-
-        .page-level-progress-plus-icon {
-            color: @navigation-progress-color;
         }
     }
 
-    .pagelevelprogress-indicator {
+    .page-level-progress-navigation-completion {
         transition: all 0.3s ease-in;
         background-color: @navigation-progress-background-color;
         border: 2px solid @navigation-progress-border-color;
         border-radius: 50px;
     }
 
-    .pagelevelprogress-indicator-inner {
+    .page-level-progress-indicator-inner {
         border: 1px solid @navigation-progress-background-color;
 
     }
 
-    .pagelevelprogress-indicator-bar {
+    .page-level-progress-navigation-bar {
         left: 0;
         background-color: @navigation-progress-color;
 
@@ -63,7 +54,7 @@
 // ==========
 
 .drawer {
-    .pagelevelprogress-item-title {
+    .page-level-progress-item-title {
         background-color: @drawer-item-color;
         color: @drawer-item-text-color;
 
@@ -82,17 +73,19 @@
             }
         }
 
-        .pagelevelprogress-indicator {
-            width: 15%;
+        .page-level-progress-indicator {
+            width: 14%;
             background-color: @drawer-item-color;
-            border-color: @drawer-progress-color;
+            transition: all 0.3s ease-in;
+            border: 2px solid @drawer-progress-color;
+            border-radius: 50px;
         }
 
-        .pagelevelprogress-indicator-inner {
+        .page-level-progress-indicator-inner {
             border-color: @drawer-item-color;
         }
 
-        .pagelevelprogress-indicator-bar {
+        .page-level-progress-indicator-bar {
             background-color: @drawer-progress-color;
         }
 
@@ -100,16 +93,16 @@
             background-color: @drawer-item-color-hover;
             color: @drawer-item-text-color-hover;
 
-            .pagelevelprogress-indicator {
+            .page-level-progress-indicator {
                 background-color: @drawer-item-color-hover;
                 border-color: @drawer-progress-color-hover;
             }
 
-            .pagelevelprogress-indicator-inner {
+            .page-level-progress-indicator-inner {
                 border-color: @drawer-item-color-hover;
             }
 
-            .pagelevelprogress-indicator-bar {
+            .page-level-progress-indicator-bar {
                 background-color: @drawer-progress-color-hover;
             }
 
@@ -122,16 +115,16 @@
 .menu-header,
 .page-header {
 
-    .pagelevelprogress-indicator {
+    .page-level-progress-indicator {
         background-color: @background-color-inverted;
         border-color: @navigation-progress-background-color;
     }
 
-    .pagelevelprogress-indicator-inner {
+    .page-level-progress-indicator-inner {
         border-color: @background-color-inverted;
     }
 
-    .pagelevelprogress-indicator-bar {
+    .page-level-progress-indicator-bar {
         background-color: @navigation-progress-background-color;
     }
 }
@@ -143,16 +136,16 @@
 .block,
 .component {
 
-    .pagelevelprogress-indicator {
+    .page-level-progress-indicator {
         background-color: @navigation-progress-background-color;
         border-color: @navigation-progress-border-color;
     }
 
-    .pagelevelprogress-indicator-inner {
+    .page-level-progress-indicator-inner {
         border-color: @navigation-progress-background-color;
     }
 
-    .pagelevelprogress-indicator-bar {
+    .page-level-progress-indicator-bar {
         background-color: @navigation-progress-color;
     }
 }
